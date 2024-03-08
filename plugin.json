@@ -5,7 +5,7 @@
   "IsGlobal": false,
   "Name": "Timestamp",
   "Author": "delichik",
-  "Version": "1.0.0",
+  "Version": "0.1.0",
   "Language": "csharp",
   "Website": "https://github.com/delichik/PowerToys.Run.Timestamp",
   "ExecuteFileName": "Community.PowerToys.Run.Plugin.Timestamp.dll",
