@@ -5,8 +5,8 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
-        <AssemblyName>Community.PowerToys.Run.Plugin.timestamp</AssemblyName>
-        <RootNamespace>Community.PowerToys.Run.Plugin.timestamp</RootNamespace>
+        <AssemblyName>Community.PowerToys.Run.Plugin.Timestamp</AssemblyName>
+        <RootNamespace>Community.PowerToys.Run.Plugin.Timestamp</RootNamespace>
         <Version>$([System.Text.RegularExpressions.Regex]::Match([System.IO.File]::ReadAllText('.\plugin.json'), '"Version": "(\S+)"').Groups[1].Value)</Version>
         <Platforms>x64;ARM64</Platforms>
         <Title></Title>

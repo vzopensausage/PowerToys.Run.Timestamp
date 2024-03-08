@@ -6,7 +6,7 @@ using System;
 using System.Windows;
 using Wox.Plugin;
 
-namespace Community.PowerToys.Run.Plugin.timestamp
+namespace Community.PowerToys.Run.Plugin.Timestamp
 {
     public static class Utils
     {

@@ -4,11 +4,11 @@
   "Disabled": false,
   "IsGlobal": false,
   "Name": "Timestamp",
-  "Author": "",
+  "Author": "delichik",
   "Version": "1.0.0",
   "Language": "csharp",
-  "Website": "",
-  "ExecuteFileName": "Community.PowerToys.Run.Plugin.timestamp.dll",
-  "IcoPathDark": "Images\\timestamp.dark.png",
-  "IcoPathLight": "Images\\timestamp.light.png"
+  "Website": "https://github.com/delichik/PowerToys.Run.Timestamp",
+  "ExecuteFileName": "Community.PowerToys.Run.Plugin.Timestamp.dll",
+  "IcoPathDark": "Images\\Timestamp.dark.png",
+  "IcoPathLight": "Images\\Timestamp.light.png"
 }

@@ -5,7 +5,7 @@ using Wox.Plugin;
 
 #pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
 
-namespace Community.PowerToys.Run.Plugin.timestamp
+namespace Community.PowerToys.Run.Plugin.Timestamp
 {
     public class Main : IPlugin, IPluginI18n, ISettingProvider, IReloadable, IDisposable
     {
@@ -101,11 +101,11 @@ namespace Community.PowerToys.Run.Plugin.timestamp
         {
             if (theme == Theme.Light || theme == Theme.HighContrastWhite)
             {
-                _iconPath = "Images/timestamp.light.png";
+                _iconPath = "Images/Timestamp.light.png";
             }
             else
             {
-                _iconPath = "Images/timestamp.dark.png";
+                _iconPath = "Images/Timestamp.dark.png";
             }
         }
 
