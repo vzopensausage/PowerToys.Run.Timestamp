@@ -24,7 +24,7 @@ namespace Community.PowerToys.Run.Plugin.Timestamp
 
         public string Description => Properties.Resources.plugin_description;
 
-        public static string PluginID => "5be86814-59aa-569d-103b-03eefb9546bb";
+        public static string PluginID => "2D090E95-72AE-44DF-B045-6F7287B88FE1";
 
         // TODO: add additional options
         public IEnumerable<PluginAdditionalOption> AdditionalOptions => new List<PluginAdditionalOption>()
