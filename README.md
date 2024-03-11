@@ -4,6 +4,11 @@
 just like [Timestamp](https://github.com/arieslee/timestampforwox)
 on [Wox](https://github.com/Wox-launcher/Wox)
 
+## Installation
+Take a look at [PowerToys Official doc](https://github.com/microsoft/PowerToys/blob/main/doc/thirdPartyRunPlugins.md).
+
+You may need to create a sub-folder under `Plugins` like `Plugins/Timestamp`.
+
 ## Usage
 
 convert unix timestamp to date string:
