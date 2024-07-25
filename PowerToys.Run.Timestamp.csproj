@@ -54,6 +54,15 @@
             <AutoGen>True</AutoGen>
             <DependentUpon>Resources.resx</DependentUpon>
         </Compile>
+        <EmbeddedResource Update="Properties\Resource.zh-CN.resx">
+          <Generator>ResXFileCodeGenerator</Generator>
+          <LastGenOutput>Resource.zh-Hans.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <Compile Update="Properties\Resource.zh-CN.Designer.cs">
+          <DesignTime>True</DesignTime>
+          <AutoGen>True</AutoGen>
+          <DependentUpon>Resource.zh-CN.resx</DependentUpon>
+        </Compile>
     </ItemGroup>
 
     <ItemGroup>
