@@ -2,7 +2,6 @@
 // The Microsoft Corporation licenses this file to you under the MIT license.\r
 // See the LICENSE file in the project root for more information.
 
-using System;
 using System.Windows;
 using Wox.Plugin;
 
@@ -15,7 +14,7 @@ namespace Community.PowerToys.Run.Plugin.Timestamp
 
         public static string GetNowTimeStamp()
         {
-            TimeSpan ts = DateTime.Now - UnixTimeBegin;
+            TimeSpan ts = DateTime.Now - TimeZoneInfo.ConvertTimeFromUtc(UnixTimeBegin, TimeZoneInfo.Local);
             return Convert.ToInt64(ts.TotalSeconds).ToString();
         }
 
@@ -26,7 +25,7 @@ namespace Community.PowerToys.Run.Plugin.Timestamp
 
         public static string ParseDate(string dateString)
         {
-            return Convert.ToInt64((DateTime.Parse(dateString) - UnixTimeBegin).TotalSeconds).ToString();
+            return Convert.ToInt64((DateTime.Parse(dateString) - TimeZoneInfo.ConvertTimeFromUtc(UnixTimeBegin, TimeZoneInfo.Local)).TotalSeconds).ToString();
         }
 
         public static string FormatDate(long unixTime)
@@ -44,10 +43,10 @@ namespace Community.PowerToys.Run.Plugin.Timestamp
                 throw new FormatException();
             }
 
-            return (UnixTimeBegin + new TimeSpan(unixTime * TimeSpan.TicksPerSecond)).ToString(DateFormat);
+            return (TimeZoneInfo.ConvertTimeFromUtc(UnixTimeBegin, TimeZoneInfo.Local) + new TimeSpan(unixTime * TimeSpan.TicksPerSecond)).ToString(DateFormat);
         }
 
-        public static void SetClipboardText(string s)
+        static void SetClipboardText(string s)
         {
             Clipboard.SetDataObject(s);
         }
